@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter no. of elements you want in array: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter all the elements:");
+        for (int i = 0; i < n; i++) arr[i] = sc.nextInt();
+        System.out.print("Odd:");
+        Arrays.stream(arr).filter(x -> x % 2 != 0).forEach(x -> System.out.print(x + ","));
+        System.out.println();
+        System.out.print("Even:");
+        Arrays.stream(arr).filter(x -> x % 2 == 0).forEach(x -> System.out.print(x + ","));
+    }
+}
