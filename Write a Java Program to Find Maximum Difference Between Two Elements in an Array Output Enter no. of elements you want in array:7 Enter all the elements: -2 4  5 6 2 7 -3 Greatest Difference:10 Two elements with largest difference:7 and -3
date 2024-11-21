@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter no. of elements you want in array: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter all the elements:");
+        for (int i = 0; i < n; i++) arr[i] = sc.nextInt();
+        int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
+        for (int num : arr) { min = Math.min(min, num); max = Math.max(max, num); }
+        System.out.println("Greatest Difference: " + (max - min));
+        System.out.println("Two elements with largest difference: " + max + " and " + min);
+    }
+}
