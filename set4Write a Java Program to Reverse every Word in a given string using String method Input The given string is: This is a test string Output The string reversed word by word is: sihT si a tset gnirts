@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        String str = "This is a test string";
+        String[] words = str.split(" ");
+        StringBuilder result = new StringBuilder();
+        for (String word : words) {
+            result.append(new StringBuilder(word).reverse().toString()).append(" ");
+        }
+        System.out.println("The string reversed word by word is: " + result.toString().trim());
+    }
+}
