@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class RemoveDuplicates {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
+        
+        int[] arr = new int[size];
+        System.out.println("Enter array elements in sorted order:");
+        for (int i = 0; i < size; i++) arr[i] = scanner.nextInt();
+        
+        // Remove duplicates using HashSet and print the result
+        Arrays.stream(arr).distinct().forEach(n -> System.out.print(n + " "));
+    }
+}
