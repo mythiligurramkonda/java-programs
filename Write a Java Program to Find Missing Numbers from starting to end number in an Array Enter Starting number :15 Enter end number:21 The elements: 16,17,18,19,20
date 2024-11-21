@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter Starting number: ");
+        int start = scanner.nextInt();
+        System.out.print("Enter End number: ");
+        int end = scanner.nextInt();
+        int[] elements = {16, 17, 18, 19, 20};
+        System.out.println("The elements: 16, 17, 18, 19, 20");
+        System.out.println("Missing numbers:");
+        for (int i = start; i <= end; i++) {
+            boolean found = false;
+            for (int element : elements) {
+                if (i == element) {
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
