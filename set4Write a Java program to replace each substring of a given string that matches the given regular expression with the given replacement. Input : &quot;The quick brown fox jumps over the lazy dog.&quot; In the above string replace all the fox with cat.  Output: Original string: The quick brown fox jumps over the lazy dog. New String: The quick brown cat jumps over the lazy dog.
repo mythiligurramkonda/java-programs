@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        String originalString = "The quick brown fox jumps over the lazy dog.";
+        String regex = "fox";  
+        String replacement = "cat"; 
+        String newString = originalString.replaceAll(regex, replacement);
+        System.out.println("Original string: " + originalString);
+        System.out.println("New String: " + newString);
+    }
+}
