@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        String initialString = "Java abstract";
+        int index = 6;
+        String stringToInsert = " programming";
+        String result = initialString.substring(0, index) + stringToInsert + initialString.substring(index);
+        System.out.println("Initial String = " + initialString);
+        System.out.println("Index where new string will be inserted = " + index);
+        System.out.println("Resultant String = " + result);
+    }
+}
