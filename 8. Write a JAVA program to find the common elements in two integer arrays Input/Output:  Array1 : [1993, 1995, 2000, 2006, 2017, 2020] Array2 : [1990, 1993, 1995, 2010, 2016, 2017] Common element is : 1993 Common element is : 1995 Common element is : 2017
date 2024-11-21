@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int[] array1 = {1993, 1995, 2000, 2006, 2017, 2020};
+        int[] array2 = {1990, 1993, 1995, 2010, 2016, 2017};
+        Set<Integer> set1 = new HashSet<>();
+        for (int num : array1) set1.add(num);
+        System.out.println("Common elements:");
+        for (int num : array2) {
+            if (set1.contains(num)) {
+                System.out.println("Common element is : " + num);
+            }
+        }
+    }
+}
