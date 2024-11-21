@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        String[] arr = {"Raj", "77", "101", "99", "Jio"};
+        int numCount = 0, strCount = 0;
+        for (String s : arr) {
+            if (s.matches("\\d+")) numCount++;
+            else strCount++;
+        }
+        System.out.println("Numeric: " + numCount);
+        System.out.println("Strings: " + strCount);
+    }
+}
